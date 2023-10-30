@@ -10,14 +10,18 @@ ul{
     display: flex;
     flex-direction: row;
     list-style: none;
-    color: black;
     margin: 0;
     padding: 0;
 }
-li{
-    padding: 0 5px;
-    margin: 0 5px;
+a{
     font-weight: bold;
+    transition: all .1s;
+    color: black;
+    text-decoration: none;
+}
+li{
+    padding: 0 10px;
+    margin: 0 10px;
 }
 h3{
     padding: 10px;
@@ -45,4 +49,29 @@ h3:hover{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.233);
     border-radius: 50%;
+}
+.dropbar1,
+.dropbar2,
+.dropbar3,
+.dropbar4{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px black;
+    padding: 10px;
+    position: absolute;
+    background-color: rgb(66, 110, 66);
+    z-index: 10;
+    display: none;
+}
+.drop1:hover .dropbar1{
+    display: flex;
+}
+.drop2:hover .dropbar2{
+    display: flex;
+}
+.drop3:hover .dropbar3{
+    display: flex;
+}
+.drop4:hover .dropbar5{
+    display: flex;
 }
