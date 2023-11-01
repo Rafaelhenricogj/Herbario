@@ -20,17 +20,22 @@ a{
     color: black;
     text-decoration: none;
 }
+a:hover{
+    color: white;
+}
 li{
     padding: 0 10px;
     margin: 0 10px;
+    color: black;
 }
 h3{
     padding: 10px;
     margin: 0;
+    color: black;
 }
 li:hover{
     cursor: pointer;
-    color: red;
+    color: white;
 }
 h3:hover{
     cursor: default;
@@ -45,16 +50,17 @@ h3:hover{
     margin: 0;
     padding: 10px;
     color: black;
+    border-radius: 10px;
+}
+.icon1{
+    margin: 0;
+    padding: 10px;
 }
 .icon:hover{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.233);
-    border-radius: 50%;
 }
-.dropbar1,
-.dropbar2,
-.dropbar3,
-.dropbar4{
+.dropbar{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -83,54 +89,65 @@ h3:hover{
 }
 .menu{
     font-weight: bold;
-    padding: 10px;
     display: none;
     background-color: transparent;
     border: none;
-    border-radius: 50%;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+.uk-button{
+    margin: 0;
 }
 .menu:hover{
     background-color: rgba(255, 255, 255, 0.205);
 }
-button:focus ~ul{
-    height: 260px;
-  }
+.icon2{
+    display: none;
+}
+.options2{
+    display: none;
+}
 
 @media (max-width: 1000px){
+    main{
+        padding: 5px 0 5px 5px;
+    }
+    .dropbar{
+        border: solid 1px black;
+        box-shadow: 5px 5px 20px 1px black;
+    }
+    .icon1{
+        display: none;
+    }
+    .options1{
+        display: none;
+    }
     .menu{
         display: block;
     }
-    main{
-        display: flex;
-        flex-direction: column;
+    .options2{
+        display: block;
     }
     ul{
         display: flex;
         flex-direction: column;
-        height: 100px;
     }
-    span{
-        display: none;
+    .uk-offcanvas-bar{
+        background-color: rgb(66, 110, 66);
+        padding: 5px;
     }
     li{
-        margin: 0;
-        padding: 5px;
-        justify-content: center;
+        padding: 10px;
+    }
+    .icon2{
         display: flex;
     }
-    li:hover{
-        background-color: rgba(255, 255, 255, 0.205);
-    }
-    .dropbar1,
-    .dropbar2,
-    .dropbar3,
-    .dropbar4{
+    .userconfig{
         display: flex;
         flex-direction: column;
-        position: absolute;
-        margin-top: 27px;
-        background-color: rgb(66, 110, 66);
-        z-index: 10;
-        display: none;
+        justify-content: space-between;
+        height: 91%;
     }
 }

@@ -2,10 +2,10 @@
 <main>
     <div class="mn">
         <h3>Herbário Instituto Federal</h3>
-        <span uk-icon="user" class="icon"></span>
-        <button class="menu">☰</button>
+        <app-user class="icon icon1"></app-user>
+        <button class="uk-button uk-button-default uk-margin-small-right menu" type="button" uk-toggle="target: #offcanvas-push">☰</button>
     </div>
-    <ul>
+    <ul class="options1">
         <li>
             <a href="" class="">Início</a>
         </li>
@@ -13,8 +13,8 @@
             <a href="" class="">Nomes</a>
         </li>
         <li class="drop1">
-            <a href="" class="mais">Spécimens ⌵</a>
-            <div class="dropbar1">
+            <a class="mais">Spécimens ⌵</a>
+            <div class="dropbar1 dropbar">
                 <a href="" class="exp">Eventos de coleção</a>
                 <a href="" class="exp">Coleções</a>
                 <a href="" class="exp">Espécimes</a>
@@ -30,24 +30,24 @@
             <a href="" class="">Imagens</a>
         </li>
         <li class="drop2">
-            <a href="" class="mais">Mais ⌵</a>
-            <div class="dropbar2">
+            <a class="mais">Mais ⌵</a>
+            <div class="dropbar2 dropbar">
                 <a href="" class="exp">Publicações</a>
                 <a href="" class="exp">Localizações</a>
                 <a href="" class="exp">Instituição</a>
             </div>
         </li>
         <li class="drop3">
-            <a href="" class="mais">Ferramentas ⌵</a>
-            <div class="dropbar3">
+            <a class="mais">Ferramentas ⌵</a>
+            <div class="dropbar3 dropbar">
                 <a href="" class="exp">Exemplo1</a>
                 <a href="" class="exp">Exemplo2</a>
                 <a href="" class="exp">Exemplo3</a>
             </div>
         </li>
         <li class="drop4">
-            <a href="" class="mais">Ajuda ⌵</a>
-            <div class="dropbar4">
+            <a class="mais">Ajuda ⌵</a>
+            <div class="dropbar4 dropbar">
                 <a href="" class="exp">Exemplo1</a>
                 <a href="" class="exp">Exemplo2</a>
                 <a href="" class="exp">Exemplo3</a>
@@ -55,3 +55,65 @@
         </li>
     </ul>
 </main>
+
+
+<div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <h3>Menu</h3>
+        <div class="userconfig">
+        <ul class="options2">
+            <li>
+                <a href="" class="">Início</a>
+            </li>
+            <li>
+                <a href="" class="">Nomes</a>
+            </li>
+            <li class="drop1">
+                <a class="mais">Spécimens ⌵</a>
+                <div class="dropbar1 dropbar">
+                    <a href="" class="exp">Eventos de coleção</a>
+                    <a href="" class="exp">Coleções</a>
+                    <a href="" class="exp">Espécimes</a>
+                </div>
+            </li>
+            <li>
+                <a href="" class="">Referências</a>
+            </li>
+            <li>
+                <a href="" class="">Projetos</a>
+            </li>
+            <li>
+                <a href="" class="">Imagens</a>
+            </li>
+            <li class="drop2">
+                <a class="mais">Mais ⌵</a>
+                <div class="dropbar2 dropbar">
+                    <a href="" class="exp">Publicações</a>
+                    <a href="" class="exp">Localizações</a>
+                    <a href="" class="exp">Instituição</a>
+                </div>
+            </li>
+            <li class="drop3">
+                <a class="mais">Ferramentas ⌵</a>
+                <div class="dropbar3 dropbar">
+                    <a href="" class="exp">Exemplo1</a>
+                    <a href="" class="exp">Exemplo2</a>
+                    <a href="" class="exp">Exemplo3</a>
+                </div>
+            </li>
+            <li class="drop4">
+                <a class="mais">Ajuda ⌵</a>
+                <div class="dropbar4 dropbar">
+                    <a href="" class="exp">Exemplo1</a>
+                    <a href="" class="exp">Exemplo2</a>
+                    <a href="" class="exp">Exemplo3</a>
+                </div>
+            </li>
+        </ul>
+        <app-user class="icon icon2"></app-user>
+    </div>
+    </div>
+</div>
